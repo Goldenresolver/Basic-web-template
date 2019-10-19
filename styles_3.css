@@ -1,0 +1,150 @@
+
+div{
+    float: left
+}
+
+/* Most webstites use a container div that holds everything ie divs within a div, etc. */
+#container{
+    width: 100%;
+}
+
+#navigation{
+    width: 100%;
+    background: #52a0e5;
+    color: white;
+}
+
+#logo{
+    width: 160px;
+    height: 40px;
+    float: left;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+#navigation #desktopMenu{
+    float: right;
+    list-style: none; /* list-style determines the shape of the bullet points */
+    margin-top: 35px;
+}
+
+#navigation ul li{
+    display: inline;
+    margin: 4px;
+}
+
+#hero{
+    width: 100%;
+    height: 400px;
+    background: url(../mountain.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#hero h1{
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+    z-index: 3;
+    font-family: bahnschrift;
+}
+
+#overlay{
+    width: 100%;
+    height: 400px;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.inlineDivs{
+    width: 33.3%;
+    height: 200px;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.inlineDivs img{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    display: block;
+    margin-top: 14px;
+}
+
+.inlineDivs h2{
+    text-align: center;
+}
+
+.inlineDivs a{
+    text-align: center;
+    display:block;
+    background: #52a0e5;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+}
+
+#footer{
+    width: 100%;
+    background: #52a0e5;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+
+/* This the code for mobile */
+@media screen and (max-width:600px)
+{
+    .inlineDivs{
+        width: 100%;
+        height: auto;
+        padding-bottom:15px;
+
+    }
+#desktopMenu{
+    display: none;
+
+}
+#mobileMenuButton{
+    float:right;
+    width:50px;
+    margin-top: 15px;
+    margin-right: 15px;
+
+
+}
+.menuLine{
+    width:50px;
+    height:6px;
+    margin:4px;
+    background: white;
+}
+#mobileMenu{
+    display: none;
+    width: 100%;
+    float: left;
+    padding:0;
+
+}
+#mobileMenu li{
+    width:100%;
+    text-align: left;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    float: left;
+
+}
+}
+

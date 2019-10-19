@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 3</title>
+    <link rel = "stylesheet" href = "styles_3.css">
+    <script src="Behavior.js"></script>
+</head>
+<body>
+    <div id = "container">
+
+        <div id = "navigation">
+
+            <h3 id = "logo"> Hiking Trails </h3>
+
+            <!-- ul is an 'unordered list'. li is 'list item'. These are commonly used for navigaitons -->
+            <ul id= "desktopMenu">
+                <!--Quoatotions hold the name of id, when it starts and when it stops-->
+                <li> Home </li>
+                <li> About </li>
+                <li> Contact </li>
+
+            </ul>
+           <div id="mobileMenuButton" onclick="openMenu()">
+             <div class= "menuLine"></div>
+            <div class= "menuLine"> </div>
+            <div class= "menuLine"> </div>
+          
+           </div>
+           <ul id= "mobileMenu">
+            <!--Quoatotions hold the name of id, when it starts and when it stops-->
+            <li> Home </li>
+            <li> About </li>
+            <li> Contact </li>
+
+        </ul>
+        </div>
+
+        <!-- a 'hero' AKA 'header' means a big image at the top of your website -->
+        <div id = "hero">
+
+            <h1> World's best mountain hiking! </h1>
+
+            <div id = "overlay"></div>
+
+        </div>
+
+        <div class = "inlineDivs">
+
+            <img src = "../bike.svg">
+
+            <h2> Great bike trails </h2>
+
+            <a href = "#"> Learn more </a>
+
+        </div>
+
+        <div class = "inlineDivs">
+
+            <img src = "../run.svg">
+
+            <h2> Amazing running trails </h2>
+
+            <a href = "#"> Learn more </a>
+
+        </div>
+
+        <div class = "inlineDivs">
+
+            <img src = "../sun.svg">
+
+            <h2> Constant sunshine </h2>
+
+            <a href = "#"> Learn more </a>
+
+        </div>
+
+        <!-- Footers are the bottom-most part of the website. It usually shows copyright and contact info -->
+        <div id = "footer">
+
+            &copy Copyright
+
+        </div>
+
+    </div>
+</body>
+</html>
